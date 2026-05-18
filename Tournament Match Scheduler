@@ -1,0 +1,22 @@
+import random # Added: Import the random module for random.shuffle
+
+a=int(input("Enter num of teams:"))
+teams=[]
+print("Enter all team names:")
+for i in range(a): # Fixed: Added colon
+  t=input("ENter team name:") # Fixed: Indented
+  teams.append(t) # Fixed: Appending 't' instead of a new input
+
+m=int(input("Enter num of meet bw teams:")) # Fixed: Moved outside the team name input loop
+matches=[]
+for i in range(0,a-1):
+  for j in range(i+1,a):
+    for k in range(m):
+      matches.append([teams[i],teams[j]])
+
+random.shuffle(matches) # Fixed: Shuffling after all matches are generated
+
+pos=1
+for i in matches:
+  print("MATCH {} : {} vs {}".format(pos,i[0],i[1]))
+  pos=pos+1
