@@ -1,0 +1,7 @@
+def abc(*args):
+  sum=0
+  for i in args:
+    sum=sum+i
+  print(sum)
+abc(10,20)
+abc(10,20,30)
