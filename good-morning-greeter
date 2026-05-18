@@ -1,0 +1,5 @@
+def ace(name="vaishnavi"):
+  print("Good morning",name)
+ace("prashu")
+ace("veena")
+ace("mythri")
