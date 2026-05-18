@@ -1,0 +1,5 @@
+names=["vyshu","geeth","myth","veena","indu"]
+marks=["45","43","88","66","75"]
+pos=1
+for i in range(5)
+if marks[i]>40
