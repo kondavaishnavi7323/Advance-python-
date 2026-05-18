@@ -1,0 +1,15 @@
+a=int(input("enter n number:"))
+nums=[]
+while(True):
+  if a==1:
+    break
+  elif a in nums:
+    break
+  else:
+   nums.append(a)
+   d=sum([int(i)*int(i) for i in str(a)])
+   nums.append(d)
+  if a==1:
+   print("Round")
+  else:
+   print("Not Round")
