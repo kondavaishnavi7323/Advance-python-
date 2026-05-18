@@ -1,0 +1,25 @@
+names=["vaishu","geeth","mythu","veena","indu"]
+marks=[[30,40,50],[50,60,70],[30,40,80],[90,80,95],[70,95,89]]
+
+for i in range(5):
+
+
+  p = sum(marks[i]) // 3
+
+  if average_mark >= 90:
+    grade = "A+"
+  elif average_mark >= 80:
+    grade = "A"
+  elif average_mark >= 70:
+    grade = "B+"
+  elif average_mark >= 60:
+    grade = "B"
+  elif average_mark >= 50:
+    grade = "C+"
+  elif average_mark >= 40:
+    grade = "C"
+  else:
+    grade = "F"
+  print(f"{i+1}. mr/ms {names[i].title()} has scored {p}% - {grade} Grade")
+
+  pos=pos+1
